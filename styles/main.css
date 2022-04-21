@@ -1,0 +1,23 @@
+.grid-container {
+  background-color: #a19f9f;
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+/*# sourceMappingURL=main.css.map */
