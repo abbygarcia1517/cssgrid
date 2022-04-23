@@ -1,8 +1,21 @@
-.grid-container {
-  background-color: #a19f9f;
+html, body {
   padding: 2em;
+  height: 100%;
+}
+
+.grid-container {
+  background-color: gray;
+  padding: 2em;
+  height: 80%;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 50px 1fr 50px;
+  -ms-grid-columns: 300px 1fr;
+      grid-template: 50px 1fr 50px / 300px 1fr;
+}
+
+.grid-items {
+  border: 1px solid white;
 }
 
 .teal {
@@ -15,6 +28,7 @@
 
 .yellow {
   background-color: yellow;
+  color: purple;
 }
 
 .purple {
