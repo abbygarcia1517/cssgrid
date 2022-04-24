@@ -12,6 +12,9 @@ html, body {
   -ms-grid-rows: 50px 1fr 50px;
   -ms-grid-columns: 300px 1fr;
       grid-template: 50px 1fr 50px / 300px 1fr;
+  row-gap: 10px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
 }
 
 .grid-items {
