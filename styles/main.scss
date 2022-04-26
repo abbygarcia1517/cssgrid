@@ -1,43 +1,79 @@
-html, body {
-padding: 2em;
-height: 100%;
-
-}
-
-.grid-container{
-background-color: gray;
-padding: 2em;
-height: 80%;
-
-display:grid;
-// grid-template-columns: 1fr 2fr;
-// grid-template-rows: repeat(1fr);
-
-grid-template: 50px 1fr 50px / 300px 1fr;
-row-gap: 10px;
-column-gap: 30px;
-
-}
-
-.grid-items{
-    border: 1px solid white;
-}
-
-.teal{
-background-color: teal;
-}
-
-.pink{
-background-color: pink;
-
-}
-
-.yellow{
-background-color: yellow;
-color: purple;
-}
-
-.purple{
-background-color: purple;
-
-}
+.page-wrapper{
+    display: grid;
+    
+    }
+    
+    header{
+    background-color: rgba(69, 7, 224, 0.791);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    height: 10vh;
+    }
+    
+    
+    .featured header{
+    background-color: purple;
+    color: white;
+    height: 3vh;
+     
+    }
+    
+    .content-wrapper{
+    background-color: rgb(145, 97, 173);
+    color: white;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    height: 70vh;
+    
+    }
+    
+    .content-area{
+    background-color: rgb(64, 34, 94);
+    
+    }
+    
+    .featured{
+    display: grid;
+    row-gap: 10px;
+    padding-bottom: 10px;
+    
+    }
+    
+    footer{
+        background-color: rgba(69, 7, 224, 0.791);
+        color: white;
+    
+    
+    
+    }
+    
+    .featured-items{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 30px;
+    
+    div{
+        border: 1px solid purple;
+        }
+    
+    
+    }
+    
+    .feature-one{
+    
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    
+    }
+    
+    
+    li{
+        list-style: none;
+        color: white;
+    }
+    

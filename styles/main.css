@@ -1,40 +1,74 @@
-html, body {
-  padding: 2em;
-  height: 100%;
-}
-
-.grid-container {
-  background-color: gray;
-  padding: 2em;
-  height: 80%;
+.page-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 50px 1fr 50px;
-  -ms-grid-columns: 300px 1fr;
-      grid-template: 50px 1fr 50px / 300px 1fr;
+}
+
+header {
+  background-color: rgba(69, 7, 224, 0.791);
+  color: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+}
+
+.featured header {
+  background-color: purple;
+  color: white;
+  height: 3vh;
+}
+
+.content-wrapper {
+  background-color: #9161ad;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 1fr;
+      grid-template-columns: 150px 1fr;
+  height: 70vh;
+}
+
+.content-area {
+  background-color: #40225e;
+}
+
+.featured {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: rgba(69, 7, 224, 0.791);
+  color: white;
+}
+
+.featured-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   row-gap: 10px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
 }
 
-.grid-items {
-  border: 1px solid white;
+.featured-items div {
+  border: 1px solid purple;
 }
 
-.teal {
-  background-color: teal;
+.feature-one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-.pink {
-  background-color: pink;
-}
-
-.yellow {
-  background-color: yellow;
-  color: purple;
-}
-
-.purple {
-  background-color: purple;
+li {
+  list-style: none;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
